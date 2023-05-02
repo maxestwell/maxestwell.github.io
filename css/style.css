@@ -1,6 +1,7 @@
 :root {
   --background-color: #f2f0e4;
   --border-color: #1d1d1c10;
+  --highlight-color: #4c956c;
 }
 
 body {
@@ -12,8 +13,34 @@ body {
   overflow: hidden;
 }
 
+.cursor-centre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  position: fixed;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #f2f0e4;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.25s, height 0.25s;
+}
+
+.cursor.grow {
+  width: 20px;
+  height: 20px;
+  transition: width 0.25s, height 0.25s;
+}
+
 * {
   box-sizing: border-box;
+  cursor: none;
 }
 
 h1,
@@ -22,13 +49,18 @@ h3,
 a,
 p,
 span {
-  font-family: "fagun", sans-serif;
-  font-weight: 700;
+  font-family: "halcom", sans-serif;
+  font-weight: 500;
   font-style: normal;
+  color: #1d1d1c;
 }
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--highlight-color);
 }
 
 nav {
@@ -60,16 +92,29 @@ nav > .nav-section {
   justify-content: flex-start;
 }
 
-#nav-logo-section > a > object {
-  width: 5rem;
+a > svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+}
+
+#nav-logo-section > a > svg {
+  height: 2.5rem;
 }
 
 #nav-link-section {
-  gap: 6rem;
+  justify-content: space-around;
 }
 
 #nav-social-section {
-  gap: 3rem;
+  justify-content: space-around;
+}
+
+#nav-social-section > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -96,3 +141,45 @@ main > article > .article-title-section,
 main > article > .article-nav-section {
   border-top: 1px solid var(--border-color);
 }
+
+main > article > .article-description-section {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+main > article > .article-description-section > p {
+  color: #1d1d1c;
+  font-size: 1.25em;
+}
+
+main > article > .article-description-section > p > a:hover {
+  text-decoration: underline;
+}
+
+main > article > .article-title-section {
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+main > article > .article-title-section * {
+  color: #1d1d1c;
+}
+
+main > article > .article-title-section > h2 {
+  flex-basis: 50%;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+/* main > article > .article-title-section > i {
+  color: #f2f0e475;
+  font-size: 4rem;
+} */
