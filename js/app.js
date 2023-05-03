@@ -1,14 +1,17 @@
-let Cursor = document.querySelector(".cursor");
+let innerCursor = document.querySelector(".inner-cursor");
+let outerCursor = document.querySelector(".outer-cursor");
 
-document.addEventListener("mousemove", moveCursor);
+document.addEventListener("mousemove", moveinnerCursor);
 
-function moveCursor(e) {
+function moveinnerCursor(e) {
   let x = e.clientX;
   let y = e.clientY;
 
   // console.log(x,y)
-  Cursor.style.left = `${x}px`;
-  Cursor.style.top = `${y}px`;
+  innerCursor.style.left = `${x}px`;
+  innerCursor.style.top = `${y}px`;
+  outerCursor.style.left = `${x}px`;
+  outerCursor.style.top = `${y}px`;
 }
 
 let links = Array.from(document.querySelectorAll("a"));
@@ -17,9 +20,15 @@ console.log(links);
 
 links.forEach((link) => {
   link.addEventListener("mouseover", () => {
-    Cursor.classList.add("grow");
+    innerCursor.classList.add("transform");
   });
   link.addEventListener("mouseleave", () => {
-    Cursor.classList.remove("grow");
+    innerCursor.classList.remove("transform");
+  });
+  link.addEventListener("mouseover", () => {
+    outerCursor.classList.add("transform");
+  });
+  link.addEventListener("mouseleave", () => {
+    outerCursor.classList.remove("transform");
   });
 });
