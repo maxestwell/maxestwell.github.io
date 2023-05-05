@@ -10,6 +10,10 @@ body {
   height: 100vh;
 }
 
+.hide {
+  display: none;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -62,6 +66,7 @@ svg,
 
 a {
   color: var(--color);
+  font-size: 1rem;
   transition: color 200ms linear;
 }
 
@@ -119,7 +124,11 @@ nav > .nav-section {
 
 #nav-social-section,
 #nav-contact-section {
-  flex-grow: 1;
+  flex-basis: calc(100% / 6);
+}
+
+#nav-contact-section {
+  padding: 0;
 }
 
 #nav-logo-section {
@@ -204,7 +213,7 @@ main > article > .article-title-section {
 main > article > .article-description-section > p {
   margin: 1em 0;
   color: var(--color);
-  font-size: 1.25em;
+  font-size: 1.2rem;
 }
 
 main > article > .article-description-section > p > a:hover {

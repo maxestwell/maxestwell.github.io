@@ -68,3 +68,23 @@ function showSlides(slides, slideIndex, cycle) {
     showSlides(slides, slideIndex, cycle);
   }, cycle);
 }
+
+// contact section
+
+// get the elements from the DOM that you want to hide/show
+// you can get tricky and add alternative ways to track
+// the paragraph elements, but this works nice for a demo
+const whytrust = document.getElementById("whytrust"),
+  answer = document.getElementById("whytrust-answer");
+
+function change(element) {
+  // the element parameter being passed is the paragraph tag
+  // that is present/visible
+  if (element.id === "whytrust") {
+    answer.className = ""; // clear the .hide class
+    whytrust.className = "hide"; // add the .hide class
+  } else {
+    whytrust.className = ""; // clear the .hide class
+    answer.className = "hide"; // add the .hide class
+  }
+}
