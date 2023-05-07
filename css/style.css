@@ -275,12 +275,12 @@ main > article > .article-title-section > h2 {
 /* START OF ABOUT STYLING */
 
 .about > main > article > .article-image-section {
-  grid-column: span 4;
+  grid-column: span 8;
   grid-row: span 2;
 }
 
 .about > main > article > .article-description-section {
-  grid-column: span 8;
+  grid-column: span 4;
   grid-row: span 2;
 }
 
