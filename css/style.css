@@ -1,3 +1,5 @@
+/* START OF GLOBAL STYLING */
+
 :root {
   --background-color: #f2f2e2;
   --border-color: #171d1c30;
@@ -67,6 +69,8 @@ svg,
 .behance-icon:hover {
   shape-rendering: geometricPrecision;
 }
+
+/* END OF GLOBAL STYLING */
 
 /* START OF NAV STYLING */
 
@@ -205,27 +209,23 @@ main > article > .article-section {
   border-top: 1px solid var(--border-color);
 }
 
-main > article > .article-image-section {
-  grid-column: span 8;
-  grid-row: span 2;
-}
+/* main > article > .article-image-section {
+
+} */
 
 main > article > .article-description-section {
-  grid-column: span 4;
-  grid-row: span 2;
   border-left: 1px solid var(--border-color);
   overflow-y: auto;
   padding: 4rem;
 }
 
 main > article > .article-title-section {
-  grid-column: span 12;
-  grid-row: span 1;
   border-top: 1px solid var(--border-color);
 }
 
 main > article > .article-description-section > p {
   margin: 1rem 0;
+  padding: 0 1rem;
   color: var(--color);
   font-size: 1.2rem;
 }
@@ -240,10 +240,6 @@ main > article > .article-title-section {
   padding: 2rem 4rem;
 }
 
-main > article > .article-title-section * {
-  color: var(--color);
-}
-
 main > article > .article-title-section > h2 {
   flex-basis: 50%;
   font-family: "acumin-pro", sans-serif;
@@ -256,6 +252,63 @@ main > article > .article-title-section > h2 {
 }
 
 /* END OF MAIN STYLING */
+
+/* START OF WORK STYLING */
+
+.work > main > article > .article-image-section {
+  grid-column: span 8;
+  grid-row: span 2;
+}
+
+.work > main > article > .article-description-section {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.work > main > article > .article-title-section {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+/* END OF WORK STYLING */
+
+/* START OF ABOUT STYLING */
+
+.about > main > article > .article-image-section {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.about > main > article > .article-description-section {
+  grid-column: span 8;
+  grid-row: span 2;
+}
+
+.about > main > article > .article-title-section {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+/* END OF ABOUT STYLING */
+
+/* START OF SKILLS & EXPERIENCE STYLING */
+
+.skillsandexperience > main > article > .article-image-section {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.skillsandexperience > main > article > .article-description-section {
+  grid-column: span 8;
+  grid-row: span 2;
+}
+
+.skillsandexperience > main > article > .article-title-section {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+/* END OF SKILLS & EXPERIENCE STYLING */
 
 /* START OF FOOTER STYLING */
 
