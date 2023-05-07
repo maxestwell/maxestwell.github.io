@@ -220,7 +220,8 @@ main > article > .article-section {
 main > article > .article-description-section {
   border-left: 1px solid var(--border-color);
   overflow-y: auto;
-  padding: 4rem;
+  /* padding: 4rem; */
+  padding: 3rem;
 }
 
 main > article > .article-title-section {
@@ -266,8 +267,19 @@ main > article > .article-title-section > h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 3.5rem;
-  line-height: 3rem;
+  line-height: 4rem;
   margin: 0px;
+  text-transform: uppercase;
+}
+
+main > article > .article-section > h3 {
+  flex-basis: 50%;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  /* line-height: 3rem; */
+  margin: 0 1rem;
   text-transform: uppercase;
 }
 
@@ -318,12 +330,13 @@ main > article > .article-title-section > h2 {
 .about > main > .article5 > .article-description-section {
   grid-column: span 8;
   grid-row: span 2;
-  border-left: none;
+  border: none;
 }
 
 .about > main > article > .article-title-section {
   grid-column: span 12;
   grid-row: span 1;
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* END OF ABOUT STYLING */
