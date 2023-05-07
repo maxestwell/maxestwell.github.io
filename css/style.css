@@ -104,6 +104,10 @@ a:hover {
   color: #0055ff;
 }
 
+.bandcamp-icon:hover {
+  color: #60909a;
+}
+
 header {
   height: 15vh;
 }
