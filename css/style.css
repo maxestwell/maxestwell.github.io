@@ -236,6 +236,19 @@ main > article > .article-description-section > p {
   color: var(--color);
   font-size: 1.2rem;
 }
+main > article > .article-description-section > ul {
+  list-style-type: none;
+  padding: 0 1rem;
+}
+
+main > article > .article-description-section > ul > li {
+  font-family: "halcom", sans-serif;
+  font-weight: 400;
+  margin: 1rem 0;
+  font-style: normal;
+  color: var(--color);
+  font-size: 1.2rem;
+}
 
 main > article > .article-description-section > p > a:hover {
   text-decoration: underline;
@@ -289,6 +302,23 @@ main > article > .article-title-section > h2 {
 .about > main > article > .article-description-section {
   grid-column: span 4;
   grid-row: span 2;
+}
+
+.about > main > .article2 > .article-image-section,
+.about > main > .article3 > .article-image-section,
+.about > main > .article4 > .article-image-section,
+.about > main > .article5 > .article-image-section {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.about > main > .article2 > .article-description-section,
+.about > main > .article3 > .article-description-section,
+.about > main > .article4 > .article-description-section,
+.about > main > .article5 > .article-description-section {
+  grid-column: span 8;
+  grid-row: span 2;
+  border-left: none;
 }
 
 .about > main > article > .article-title-section {
