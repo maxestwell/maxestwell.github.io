@@ -1,9 +1,43 @@
-h1 {
-  font-size: 2em;
-  font-weight: bold;
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 400 to 700 */
+
+/* .finlandica-<uniquifier > {
+  font-family: "Finlandica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+* {
+  box-sizing: border-box;
 }
 
-p {
+body {
+  font-family: "Finlandica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+.full-page {
+  flex: 0 0 auto;
+  padding: 3em;
+  width: 150vw;
+  height: 100vh;
+}
+
+h1 {
+  /* padding: 2em; */
+  font-size: 2em;
+}
+
+/* p {
   line-height: 1.2;
   padding: 0.5em 0em;
-}
+} */
