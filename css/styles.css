@@ -26,6 +26,7 @@ body {
 }
 
 .full-page {
+  background-color: transparent;
   flex: 0 0 auto;
   padding: 3em;
   width: 150vw;
