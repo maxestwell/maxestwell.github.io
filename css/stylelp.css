@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+
+  font-family: "area-inktrap", "sigurd", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+main {
+  height: 100%;
+  width: 80%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+h1,
+h1 > i {
+  font-weight: 700;
+}
+
+main > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffc033;
+}
+
+p {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* html {
+  background-image: url("../logo.svg");
+  background-size: 2rem;
+} */
