@@ -1,0 +1,73 @@
+:root {
+  font-size: 16px;
+  --font-wght: 500;
+  --font-slnt: 0;
+  --area-wdth: 100;
+  --area-inkt: 100;
+}
+
+.area-variable {
+  font-family: "area-variable", sans-serif;
+}
+
+.sigurd-variable {
+  font-family: "sigurd-variable", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+b {
+  font-style: normal;
+  font-size: unset;
+  font-variation-settings: "wght" var(--font-wght), "slnt" var(--font-slnt),
+    "wdth" var(--area-wdth), "INKT" var(--area-inkt);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  --font-wght: 550;
+  font-size: 2rem;
+}
+
+h4 {
+  --font-wght: 550;
+  font-size: 1.5rem;
+}
+
+h5 {
+  --font-wght: 600;
+  font-size: 1.25rem;
+}
+
+h6 {
+  --font-wght: 600;
+  font-size: 1rem;
+}
+
+p {
+  --font-wght: 450;
+  --area-inkt: 0;
+  font-size: 1rem;
+}
+
+i {
+  --font-slnt: -10;
+}
+
+b {
+  --area-wdth: 200;
+}

@@ -3,10 +3,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100svh;
-
-  font-family: "area-inktrap", "sigurd", sans-serif;
-  font-weight: 700;
-  font-style: normal;
 }
 
 main {
@@ -17,11 +13,6 @@ main {
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   padding: 1rem;
-}
-
-h1,
-h1 > i {
-  font-weight: 700;
 }
 
 main > div {
@@ -43,8 +34,3 @@ p {
   display: flex;
   align-items: flex-end;
 }
-
-/* html {
-  background-image: url("../logo.svg");
-  background-size: 2rem;
-} */
