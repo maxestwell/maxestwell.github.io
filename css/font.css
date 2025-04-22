@@ -71,3 +71,17 @@ i {
 b {
   --area-wdth: 200;
 }
+
+.text-node-span {
+  display: inline-block;
+  position: relative;
+  top: 0.35em;
+  pointer-events: none;
+}
+
+.text-node-parent {
+  /* background-color: var(--vt-c-yellow); */
+  height: fit-content;
+  width: fit-content;
+  line-height: 1.2;
+}
