@@ -27,24 +27,29 @@
         <div class="grid-max"></div>
         <div class="grid-max"></div>
         <div class="grid-max"></div>
-        <div class="grid-max"></div>
+        <!-- <div class="grid-max"></div> -->
       </header>
       <div class="pages">
         <div class="content content-home">
           <h2><i>home</i></h2>
+          <div class="content-inner">
+            <p>hi</p>
+          </div>
         </div>
 
         <div class="content content-about-me">
           <h2><i>about me</i></h2>
+          <div class="content-inner"></div>
         </div>
 
         <div class="content content-thoughts">
           <h2><i>thoughts</i></h2>
+          <div class="content-inner"></div>
         </div>
 
         <div class="content content-contact">
           <h2><i>contact</i></h2>
-          <div>
+          <div class="content-inner">
             <a href="https://maxestwell.github.io/portfolio/"
               >Portfolio Website</a
             >
@@ -61,28 +66,29 @@
 
         <div class="content content-cv">
           <h2><i>cv</i></h2>
+          <div class="content-inner"></div>
         </div>
       </div>
 
       <nav>
         <a
-          onclick="hideContentDivs();document.getElementsByClassName('content-home')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-home')[0].style.display='flex';"
           >home</a
         >
         <a
-          onclick="hideContentDivs();document.getElementsByClassName('content-about-me')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-about-me')[0].style.display='flex';"
           >about me</a
         >
         <a
-          onclick="hideContentDivs();document.getElementsByClassName('content-thoughts')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-thoughts')[0].style.display='flex';"
           >thoughts</a
         >
         <a
-          onclick="hideContentDivs();document.getElementsByClassName('content-contact')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-contact')[0].style.display='flex';"
           >contact</a
         >
         <a
-          onclick="hideContentDivs();document.getElementsByClassName('content-cv')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-cv')[0].style.display='flex';"
           >cv</a
         >
       </nav>
