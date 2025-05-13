@@ -11,26 +11,77 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/afs5qtz.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <!-- p5js -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <!-- gsap -->
     <script src="js/app.js" defer></script>
 
     <title>maxiswell</title>
   </head>
 
   <body class="area-variable">
+    <div class="gridz">
+      <script src="js/sketch.js"></script>
+      <script src="js/rectangle.js"></script>
+    </div>
     <main>
       <h1>max <i>is</i> well</h1>
-      <div>
-        <a href="https://maxestwell.github.io/portfolio/">Portfolio Website</a>
-        <a href="https://www.linkedin.com/in/maxiswell">LinkedIn</a>
-        <a href="https://www.instagram.com/maxestwell">Instagram</a>
-        <a href="https://www.behance.net/maxiswell">Behance</a>
-        <a href="https://maxestwell.bandcamp.com">Bandcamp</a>
-        <a
-          href="https://open.spotify.com/artist/4DRJj8k5gwgZ94iokTULXx?si=8tcFqMCcT7OiF4VInrDtVw"
-          >Spotify</a
-        >
+      <div class="pages">
+        <div class="content content-home"><h2>home</h2></div>
+        <div class="content content-about-me"><h2>about me</h2></div>
+        <div class="content content-thoughts"><h2>thoughts</h2></div>
+        <div class="content content-cv"><h2>cv</h2></div>
+
+        <div class="content content-contact">
+          <h2>contact</h2>
+          <div>
+            <a href="https://maxestwell.github.io/portfolio/"
+              >Portfolio Website</a
+            >
+            <a href="https://www.linkedin.com/in/maxiswell">LinkedIn</a>
+            <a href="https://www.instagram.com/maxestwell">Instagram</a>
+            <a href="https://www.behance.net/maxiswell">Behance</a>
+            <a href="https://maxestwell.bandcamp.com">Bandcamp</a>
+            <a
+              href="https://open.spotify.com/artist/4DRJj8k5gwgZ94iokTULXx?si=8tcFqMCcT7OiF4VInrDtVw"
+              >Spotify</a
+            >
+          </div>
+        </div>
       </div>
-      <p>made by maxwell corcoran</p>
+
+      <nav>
+        <a
+          href="#"
+          onclick="hideAllContentDivs();document.getElementsByClassName('content-home')[0].style.display='block';"
+          >home</a
+        >
+        <a
+          href="#"
+          onclick="hideAllContentDivs();document.getElementsByClassName('content-about-me')[0].style.display='block';"
+          >about me</a
+        >
+        <a
+          href="#"
+          onclick="hideAllContentDivs();document.getElementsByClassName('content-thoughts')[0].style.display='block';"
+          >thoughts</a
+        >
+        <a
+          href="#"
+          onclick="hideAllContentDivs();document.getElementsByClassName('content-contact')[0].style.display='block';"
+          >contact</a
+        >
+        <a
+          href="#"
+          onclick="hideAllContentDivs();document.getElementsByClassName('content-cv')[0].style.display='block';"
+          >cv</a
+        >
+      </nav>
+
+      <footer>
+        <p>made by maxwell corcoran</p>
+      </footer>
     </main>
   </body>
 </html>

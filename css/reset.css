@@ -220,3 +220,9 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}

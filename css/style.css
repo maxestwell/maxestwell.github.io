@@ -7,15 +7,22 @@ body {
 
 main {
   height: 100%;
-  width: 80%;
+  width: 100%;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 1rem;
   padding: 1rem;
 }
 
-main > div {
+.pages {
+  flex-grow: 1;
+  max-height: 100%;
+  width: 100%;
+}
+
+.content-contact > div {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
@@ -33,4 +40,16 @@ a:hover {
 p {
   display: flex;
   align-items: flex-end;
+}
+
+.content-about-me,
+.content-thoughts,
+.content-contact,
+.content-cv {
+  display: none;
+}
+
+.gridz,
+main {
+  position: absolute;
 }
