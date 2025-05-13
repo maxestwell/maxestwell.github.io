@@ -28,6 +28,7 @@ b {
   font-size: unset;
   font-variation-settings: "wght" var(--font-wght), "slnt" var(--font-slnt),
     "wdth" var(--area-wdth), "INKT" var(--area-inkt);
+  cursor: default;
 }
 
 h1 {

@@ -15,6 +15,9 @@ main {
   gap: 1rem;
   padding: 1rem;
 }
+header {
+  height: 20%;
+}
 
 .pages {
   flex-grow: 1;
@@ -31,6 +34,7 @@ main {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -49,7 +53,14 @@ p {
   display: none;
 }
 
-.gridz,
-main {
-  position: absolute;
+.grid-max {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-cell {
+  outline: 1px solid #000000;
+  background-color: #ffffff;
 }
