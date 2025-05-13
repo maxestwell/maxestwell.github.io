@@ -15,13 +15,18 @@ main {
   gap: 1rem;
   padding: 1rem;
 }
+
 header {
-  height: 20%;
+  /* height: 20%; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .pages {
-  flex-grow: 1;
-  max-height: 100%;
+  /* flex-grow: 1; */
+  height: 50%;
+  /* max-height: 100%; */
   width: 100%;
 }
 
@@ -54,13 +59,18 @@ p {
 }
 
 .grid-max {
-  height: 100%;
+  flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(100, 1fr);
-  grid-template-rows: repeat(4, 1fr);
 }
 
 .grid-cell {
   outline: 1px solid #000000;
-  background-color: #ffffff;
+  outline-offset: -0.5px;
+}
+
+.grid-max:nth-child(even) > .grid-cell:nth-child(even),
+.grid-max:nth-child(odd) > .grid-cell:nth-child(odd) {
+  background-color: #ffc033;
+  /* background: linear-gradient(90deg, #000fe3, #ffc033); */
 }

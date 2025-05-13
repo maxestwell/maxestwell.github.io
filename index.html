@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/afs5qtz.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
-    <!-- p5js -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <!-- gsap -->
     <script src="js/app.js" defer></script>
 
     <title>maxiswell</title>
@@ -25,19 +23,23 @@
       <header>
         <!-- <h1>max <i>is</i> well</h1> -->
         <div class="grid-max"></div>
+        <div class="grid-max"></div>
+        <div class="grid-max"></div>
+        <div class="grid-max"></div>
+        <div class="grid-max"></div>
+        <div class="grid-max"></div>
       </header>
       <div class="pages">
         <div class="content content-home">
           <h2><i>home</i></h2>
         </div>
+
         <div class="content content-about-me">
           <h2><i>about me</i></h2>
         </div>
+
         <div class="content content-thoughts">
           <h2><i>thoughts</i></h2>
-        </div>
-        <div class="content content-cv">
-          <h2><i>cv</i></h2>
         </div>
 
         <div class="content content-contact">
@@ -56,27 +58,31 @@
             >
           </div>
         </div>
+
+        <div class="content content-cv">
+          <h2><i>cv</i></h2>
+        </div>
       </div>
 
       <nav>
         <a
-          onclick="hideAllContentDivs();document.getElementsByClassName('content-home')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-home')[0].style.display='block';"
           >home</a
         >
         <a
-          onclick="hideAllContentDivs();document.getElementsByClassName('content-about-me')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-about-me')[0].style.display='block';"
           >about me</a
         >
         <a
-          onclick="hideAllContentDivs();document.getElementsByClassName('content-thoughts')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-thoughts')[0].style.display='block';"
           >thoughts</a
         >
         <a
-          onclick="hideAllContentDivs();document.getElementsByClassName('content-contact')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-contact')[0].style.display='block';"
           >contact</a
         >
         <a
-          onclick="hideAllContentDivs();document.getElementsByClassName('content-cv')[0].style.display='block';"
+          onclick="hideContentDivs();document.getElementsByClassName('content-cv')[0].style.display='block';"
           >cv</a
         >
       </nav>
