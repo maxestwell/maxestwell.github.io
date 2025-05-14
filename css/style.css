@@ -108,3 +108,9 @@ img {
   outline-offset: -0.5px;
   /* background: linear-gradient(90deg, #000fe3, #ffc033); */
 }
+
+nav > ul {
+  display: flex;
+  gap: 0.5rem;
+  /* flex-direction: column; */
+}
