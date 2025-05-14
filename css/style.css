@@ -23,9 +23,23 @@ header {
   flex-direction: column;
 }
 
+.header-container {
+  /* height: 20%; */
+  flex-grow: 1;
+  display: flex;
+  gap: 1rem;
+  /* flex-direction: column; */
+}
+
+.grid-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .pages {
   /* flex-grow: 1; */
-  height: 50%;
+  height: 60%;
   /* max-height: 100%; */
   width: 100%;
 }
@@ -64,27 +78,33 @@ p {
   align-items: flex-end;
 }
 
-.content-about-me,
-.content-thoughts,
-.content-contact,
-.content-cv {
+.content:not(.content-home) {
   display: none;
+}
+
+img {
+  /* max-height: 100%; */
+  max-width: max-content;
 }
 
 .grid-max {
   flex-grow: 1;
+  flex-direction: row;
   display: grid;
-  grid-template-columns: repeat(99, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.grid-cell {
-  /* border-radius: 1rem; */
+/* .grid-cell {
+  border-radius: 1rem;
   outline: 1px solid #000000;
   outline-offset: -0.5px;
-}
+} */
 
 .grid-max:nth-child(even) > .grid-cell:nth-child(odd),
 .grid-max:nth-child(odd) > .grid-cell:nth-child(even) {
   background-color: #ffc033;
+  border-radius: 1rem;
+  outline: 1px solid #000000;
+  outline-offset: -0.5px;
   /* background: linear-gradient(90deg, #000fe3, #ffc033); */
 }
