@@ -20,35 +20,35 @@ navLinks.forEach((link) => {
   });
 });
 
-const headerContainer = document.querySelector(".header-container");
-const numberOfContainers = 9;
-const gridsPerContainer = 3;
+// const headerContainer = document.querySelector(".header-container");
+// const numberOfContainers = 9;
+// const gridsPerContainer = 3;
 
-for (let i = 0; i < numberOfContainers; i++) {
-  const gridContainer = document.createElement("div");
-  gridContainer.classList.add("grid-container");
+// for (let i = 0; i < numberOfContainers; i++) {
+//   const gridContainer = document.createElement("div");
+//   gridContainer.classList.add("grid-container");
 
-  for (let j = 0; j < gridsPerContainer; j++) {
-    const gridMax = document.createElement("div");
-    gridMax.classList.add("grid-max");
-    gridContainer.appendChild(gridMax);
-  }
-  headerContainer.appendChild(gridContainer);
-}
+//   for (let j = 0; j < gridsPerContainer; j++) {
+//     const gridMax = document.createElement("div");
+//     gridMax.classList.add("grid-max");
+//     gridContainer.appendChild(gridMax);
+//   }
+//   headerContainer.appendChild(gridContainer);
+// }
 
-const gridMaxElements = document.querySelectorAll(".grid-max");
+// const gridMaxElements = document.querySelectorAll(".grid-max");
 
-gridMaxElements.forEach((gridMax) => {
-  const computedStyle = window.getComputedStyle(gridMax);
-  const columns = computedStyle
-    .getPropertyValue("grid-template-columns")
-    .split(" ").length;
+// gridMaxElements.forEach((gridMax) => {
+//   const computedStyle = window.getComputedStyle(gridMax);
+//   const columns = computedStyle
+//     .getPropertyValue("grid-template-columns")
+//     .split(" ").length;
 
-  const totalCells = columns;
+//   const totalCells = columns;
 
-  for (let i = 0; i < totalCells; i++) {
-    const cell = document.createElement("span");
-    cell.classList.add("grid-cell");
-    gridMax.appendChild(cell);
-  }
-});
+//   for (let i = 0; i < totalCells; i++) {
+//     const cell = document.createElement("span");
+//     cell.classList.add("grid-cell");
+//     gridMax.appendChild(cell);
+//   }
+// });
