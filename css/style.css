@@ -78,7 +78,7 @@ p {
   align-items: flex-end;
 }
 
-.content:not(.content-home) {
+.content:not(.content-about-me) {
   display: none;
 }
 
