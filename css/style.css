@@ -109,6 +109,18 @@ img {
   /* background: linear-gradient(90deg, #000fe3, #ffc033); */
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 1rem;
+  gap: 1rem;
+}
+
 nav > ul {
   display: flex;
   gap: 0.5rem;
