@@ -28,7 +28,18 @@ b {
   font-size: unset;
   font-variation-settings: "wght" var(--font-wght), "slnt" var(--font-slnt),
     "wdth" var(--area-wdth), "INKT" var(--area-inkt);
-  cursor: default;
+  cursor: crosshair;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin-bottom: 0.75em;
 }
 
 h1 {
